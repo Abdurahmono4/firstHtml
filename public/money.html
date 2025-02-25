@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Your Way to a Better Education</title>
+    <style>
+      body {
+        background-color: #3d2360;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        background-color: white;
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        border: 5px solid gold;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      hr {
+        width: 80%;
+        border: 1px solid #ddd;
+      }
+      .form-group {
+        margin: 10px 0;
+        text-align: left;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 5px;
+      }
+      .credit-card {
+        text-align: left;
+      }
+      .submit-btn {
+        background-color: lightgray;
+        font-size: 20px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buy Your Way to a Better Education!</h1>
+      <p>
+        Recent changes in University of Washington policy now allow us to offer
+        grades for money. That's right! All you need to get an A in this class
+        is cold, hard, cash.
+      </p>
+      <hr />
+      <h2>Give us your money</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="section">Section</label>
+          <select id="section" name="section">
+            <option>(Select a section)</option>
+            <option>Section 1</option>
+            <option>Section 2</option>
+          </select>
+        </div>
+        <div class="form-group credit-card">
+          <label>Credit Card</label>
+          <input type="text" name="credit-card" />
+          <br />
+          <input type="radio" id="visa" name="card-type" value="Visa" />
+          <label for="visa">Visa</label>
+          <input
+            type="radio"
+            id="mastercard"
+            name="card-type"
+            value="MasterCard"
+          />
+          <label for="mastercard">MasterCard</label>
+        </div>
+        <button type="submit" class="submit-btn">I am a giant sucker.</button>
+      </form>
+    </div>
+  </body>
+</html>
