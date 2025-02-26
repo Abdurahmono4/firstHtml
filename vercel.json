@@ -1,9 +1,9 @@
 {
-  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
+  "builds": [{ "src": "public/**", "use": "@vercel/static" }],
   "routes": [
     { "src": "/money.html", "dest": "/public/money.html" },
-    { "src": "/About.html", "dest": "/public/About.html" },
-    { "src": "/Dogs.html", "dest": "/public/Dogs.html" },
+    { "src": "/dogs.html", "dest": "/public/dogs.html" },
+    { "src": "/about.html", "dest": "/public/about.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
