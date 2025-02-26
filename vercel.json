@@ -1,7 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/About", "destination": "/public/About.html" },
-    { "source": "/money", "destination": "/public/money.html" },
-    { "source": "/Dogs", "destination": "/public/Dogs.html" }
-  ]
+  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
